@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main>
+    <h1>Password Generator</h1>
+
+    <div id="screenDiv">
+      <input type="text" name="" id="screen" disabled="true">
+      <button id="screenBtn"><svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+          <path
+            d="M9 43.95q-1.2 0-2.1-.9-.9-.9-.9-2.1V10.8h3v30.15h23.7v3Zm6-6q-1.2 0-2.1-.9-.9-.9-.9-2.1v-28q0-1.2.9-2.1.9-.9 2.1-.9h22q1.2 0 2.1.9.9.9.9 2.1v28q0 1.2-.9 2.1-.9.9-2.1.9Zm0-3h22v-28H15v28Zm0 0v-28 28Z" />
+        </svg></button>
+    </div>
+
+    <section>
+      <div id="rangeDiv">
+        <h2>Character Length</h2>
+        <strong id="rangeValue">00</strong>
+      </div>
+
+      <input id="rangeInput" type="range">
+
+      <ul id="checkboxNav">
+        <li><label for="upper"> </label><input type="checkbox" name="" id="upper" data-element="uppercase" class="checkbox" checked="true"> Include Uppercase
+          Letters</label></li>
+        <li><label for="lower"> </label><input type="checkbox" name="" id="lower" data-element="lowercase" class="checkbox" checked="true"> Include Lowercase
+          Letters</label></li>
+        <li><label for="number"> </label><input type="checkbox" name="" id="number" data-element="numbers" class="checkbox"> Include
+          Numbers</label></li>
+        <li><label for="symbol"> </label><input type="checkbox" name="" id="symbol" data-element="symbols" class="checkbox"> Include
+          Symbols</label></li>
+      </ul>
+
+      <div class="random">
+        <h3>STRENGTH</h3>
+
+        <h4><b id="strength">WEAK</b><span class="bar"></span><span class="bar"></span><span class="bar"></span><span
+            class="bar"></span></h4>
+      </div>
+    </section>
+
+  </main>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
